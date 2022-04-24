@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teamproject_medicare.Doctor3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BookAppointment1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-89dp">
+
+        <ImageButton
+            android:id="@+id/back1"
+            android:layout_width="67dp"
+            android:layout_height="51dp"
+            android:backgroundTint="#0DFFFFFF"
+            android:contentDescription="@stringback1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/appointment1"
+            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            app:srcCompat="@drawable/_vector_ek100"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/bell2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#11FFFFFF"
+            android:contentDescription="@stringbell2"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.854"
+            app:layout_constraintStart_toEndOf="@+id/appointment1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            app:srcCompat="@drawable/_vector_ek114"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/appointment1"
+            android:layout_width="101dp"
+            android:layout_height="23dp"
+            android:contentDescription="@stringappointment1"
+            android:text="@string/appointment"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.048" />
+
+        <TextView
+            android:id="@+id/lewis1"
+            android:layout_width="165dp"
+            android:layout_height="23dp"
+            android:text="@string/dr_lewis_power"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appointment1"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <TextView
+            android:id="@+id/add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beaumount_clinic"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/add2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.256"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lewis1"
+            app:layout_constraintVertical_bias="0.304" />
+
+        <TextView
+            android:id="@+id/add2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_12_buttercup_drive"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lewis1"
+            app:layout_constraintVertical_bias="0.044" />
+
+        <TextView
+            android:id="@+id/add3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dublin_2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.274"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginEnd="130dp"
+            android:minHeight="48dp"
+            android:text="@string/in_person_appointment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="171dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="111dp"
+            android:layout_marginEnd="129dp"
+            android:layout_marginBottom="192dp"
+            android:minHeight="48dp"
+            android:text="@string/virtual_appointment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/make1"
+            android:layout_width="131dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="134dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="146dp"
+            android:layout_marginBottom="26dp"
+            android:backgroundTint="#40C4FF"
+            android:text="@string/confirm"
+            android:textColor="#F6F2F2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+            app:layout_constraintVertical_bias="0.294"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/doc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="76dp"
+            android:contentDescription="@stringimg2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lewis1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/_2_1_ek1" />
+
+        <ImageButton
+            android:id="@+id/imageButton24"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#0AFFFFFF"
+            app:srcCompat="@drawable/_rectangle_12_ek3_shape"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="221dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton25"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#0AFFFFFF"
+            app:srcCompat="@drawable/_rectangle_12_ek3_shape"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="221dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton26"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#0AFFFFFF"
+            app:srcCompat="@drawable/_rectangle_12_ek3_shape"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="221dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton27"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#0AFFFFFF"
+            app:srcCompat="@drawable/_rectangle_12_ek3_shape"
+            tools:layout_editor_absoluteX="227dp"
+            tools:layout_editor_absoluteY="221dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton28"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#0AFFFFFF"
+            app:srcCompat="@drawable/_rectangle_12_ek3_shape"
+            tools:layout_editor_absoluteX="292dp"
+            tools:layout_editor_absoluteY="221dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton29"
+            android:layout_width="336dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#0AFFFFFF"
+            app:srcCompat="@drawable/_rectangle_12_ek3_shape"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#040303"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="241dp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#040303"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="242dp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#040303"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="182dp"
+            tools:layout_editor_absoluteY="242dp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#040303"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="249dp"
+            tools:layout_editor_absoluteY="242dp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="#040303"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="315dp"
+            tools:layout_editor_absoluteY="242dp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule"
+            android:textColor="#040303"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="346dp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May"
+            tools:layout_editor_absoluteX="182dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May"
+            tools:layout_editor_absoluteX="249dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May"
+            tools:layout_editor_absoluteX="313dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00 - 10:30"
+            tools:layout_editor_absoluteX="249dp"
+            tools:layout_editor_absoluteY="346dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please check the box of the preferred appointment"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="406dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

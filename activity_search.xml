@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teamproject_medicare.Search">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8FAF9"
+        android:contentDescription="@stringsearch1"
+        android:foregroundTint="#69F0AE"
+        tools:context=".PrescriptionTracker">
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="341dp"
+            android:layout_marginBottom="652dp"
+            android:backgroundTint="#16FFFFFF"
+            android:contentDescription="@stringback2"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/_vector_ek100"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageButton
+            android:id="@+id/bell3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="267dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="655dp"
+            android:backgroundTint="#07FFFFFF"
+            android:contentDescription="@stringbell3"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/backarrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/_vector_ek108" />
+
+        <TextView
+            android:id="@+id/resources1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="667dp"
+            android:contentDescription="@stringsearchpg"
+            android:text="@string/search"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bell3"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toEndOf="@+id/backarrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="423dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@stringline"
+            app:layout_constraintBottom_toTopOf="@+id/home2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/line_13_shape" />
+
+        <ImageButton
+            android:id="@+id/home2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0DFFFFFF"
+            android:contentDescription="@stringhome2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/vector_ek101"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/fav2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#08FFFFFF"
+            android:contentDescription="@stringfav2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/home2"
+            app:layout_constraintTop_toBottomOf="@+id/line2"
+            app:srcCompat="@drawable/_vector_ek110"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="52dp"
+            android:backgroundTint="#0CFFFFFF"
+            android:contentDescription="@stringuser"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line2"
+            app:srcCompat="@drawable/_vector_ek117"
+            tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/searchbar"
+            android:layout_width="362dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="#92FFFFFF"
+            android:contentDescription="@stringsearchbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backarrow"
+            app:srcCompat="@drawable/line_20_ek11_shape"
+            app:tint="#C4FFFFFF"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/search2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="#0AFFFFFF"
+            android:contentDescription="@stringuser"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/user"
+            app:layout_constraintTop_toBottomOf="@+id/line2"
+            app:srcCompat="@drawable/_vector_ek112"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/search5"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="600dp"
+            android:contentDescription="@stringsearch5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/searchbar"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintStart_toStartOf="@+id/searchbar"
+            app:srcCompat="@drawable/_vector_ek104"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/search7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/search_doctors_or_clinic_names"
+            android:textColor="#595E5C5C"
+            app:layout_constraintEnd_toEndOf="@+id/searchbar"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toEndOf="@+id/search5"
+            app:layout_constraintTop_toTopOf="@+id/searchbar"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="278dp"
+            android:text="@string/nearby_doctors"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchbar" />
+
+        <ImageView
+            android:id="@+id/searchimg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="296dp"
+            android:layout_marginBottom="180dp"
+            android:contentDescription="@stringsearchimg2"
+            app:layout_constraintBottom_toTopOf="@+id/line2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/untitled_design_4_1" />
+
+        <ImageView
+            android:id="@+id/searchimg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="303dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@stringsearchimg1"
+            app:layout_constraintBottom_toTopOf="@+id/searchimg2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/untitled_design_3_2"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/searchimg3"
+            android:layout_width="94dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="296dp"
+            android:contentDescription="@stringsearchimg3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchimg2"
+            app:srcCompat="@drawable/_2_1_ek1" />
+
+        <TextView
+            android:id="@+id/drtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="106dp"
+            android:contentDescription="@stringdrtitle1"
+            android:text="@string/dr_jane_alexander"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchbar" />
+
+        <TextView
+            android:id="@+id/dradd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="6dp"
+            android:contentDescription="@stringdradd1"
+            android:text="@string/talbot_clinic"
+            app:layout_constraintStart_toEndOf="@+id/searchimg1"
+            app:layout_constraintTop_toBottomOf="@+id/drtitle1" />
+
+        <TextView
+            android:id="@+id/dradd3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@dradd3"
+            android:text="@string/_147_huston_road2"
+            app:layout_constraintStart_toEndOf="@+id/searchimg1"
+            app:layout_constraintTop_toBottomOf="@+id/dradd1" />
+
+        <TextView
+            android:id="@+id/dradd4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@stringdradd4"
+            android:text="@string/dublin_1"
+            app:layout_constraintStart_toEndOf="@+id/searchimg1"
+            app:layout_constraintTop_toBottomOf="@+id/dradd3" />
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@stringstar1"
+            app:layout_constraintStart_toEndOf="@+id/searchimg1"
+            app:layout_constraintTop_toBottomOf="@+id/dradd3"
+            app:srcCompat="@drawable/vector_ek45"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/rate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@stringrate1"
+            android:text="@string/_4_9"
+            app:layout_constraintStart_toEndOf="@+id/star1"
+            app:layout_constraintTop_toBottomOf="@+id/dradd4" />
+
+        <TextView
+            android:id="@+id/review1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@stringreview1"
+            android:text="@string/_54_reviews"
+            android:textColor="#40C4FF"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/rate1"
+            app:layout_constraintTop_toBottomOf="@+id/dradd4"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/drtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="34dp"
+            android:contentDescription="@stringdrtitle2"
+            android:text="@string/dr_jack_o_brien"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/searchimg2"
+            app:layout_constraintTop_toBottomOf="@+id/rate1" />
+
+        <TextView
+            android:id="@+id/dradd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:contentDescription="@stringdradd2"
+            android:text="@string/o_brien_surgery"
+            app:layout_constraintStart_toEndOf="@+id/searchimg2"
+            app:layout_constraintTop_toBottomOf="@+id/drtitle2" />
+
+        <TextView
+            android:id="@+id/dradd5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:contentDescription="@stringdradd5"
+            android:text="@string/_5_capel_street"
+            app:layout_constraintStart_toEndOf="@+id/searchimg2"
+            app:layout_constraintTop_toBottomOf="@+id/dradd2" />
+
+        <TextView
+            android:id="@+id/dradd6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:contentDescription="@stringdradd6"
+            android:text="@string/dublin1"
+            app:layout_constraintStart_toEndOf="@+id/searchimg2"
+            app:layout_constraintTop_toBottomOf="@+id/dradd5" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:contentDescription="@stringstar2"
+            app:layout_constraintStart_toEndOf="@+id/searchimg2"
+            app:layout_constraintTop_toBottomOf="@+id/dradd6"
+            app:srcCompat="@drawable/vector_ek48"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/rate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@stringrate2"
+            android:text="@string/_4_8"
+            app:layout_constraintStart_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toBottomOf="@+id/dradd6" />
+
+        <TextView
+            android:id="@+id/review2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@stringreview2"
+            android:text="@string/_115_reviews"
+            android:textColor="#40C4FF"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/rate2"
+            app:layout_constraintTop_toBottomOf="@+id/dradd6"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/drtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginBottom="143dp"
+            android:contentDescription="@stringdrtitle3"
+            android:text="@string/dr_lewis_power"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/line2"
+            app:layout_constraintStart_toEndOf="@+id/searchimg3" />
+
+        <TextView
+            android:id="@+id/dradd7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@stringdradd7"
+            android:text="@string/beaumount_clinic"
+            app:layout_constraintStart_toEndOf="@+id/searchimg3"
+            app:layout_constraintTop_toBottomOf="@+id/drtitle3" />
+
+        <TextView
+            android:id="@+id/dradd8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:contentDescription="@stringdradd8"
+            android:text="@string/_12_buttercup_drive"
+            app:layout_constraintStart_toEndOf="@+id/searchimg3"
+            app:layout_constraintTop_toBottomOf="@+id/dradd7" />
+
+        <TextView
+            android:id="@+id/dradd9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="156dp"
+            android:contentDescription="@stringdradd9"
+            android:text="@string/dublin_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dradd8" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:contentDescription="@stringstar3"
+            app:layout_constraintStart_toEndOf="@+id/searchimg3"
+            app:layout_constraintTop_toBottomOf="@+id/dradd9"
+            app:srcCompat="@drawable/vector_ek46"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/rate3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@stringrate3"
+            android:text="@string/_3_7"
+            app:layout_constraintStart_toEndOf="@+id/star3"
+            app:layout_constraintTop_toBottomOf="@+id/dradd9" />
+
+        <TextView
+            android:id="@+id/review3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="57dp"
+            android:text="@string/_85_reviews"
+            android:textColor="#40C4FF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/line2"
+            app:layout_constraintStart_toEndOf="@+id/rate3"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
